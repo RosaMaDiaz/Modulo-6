@@ -1,0 +1,33 @@
+/* Encabezado */
+header {
+    background-color: #e91e63;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Secciones */
+.seccion {
+    background-color: #f8bbd0;
+    border: 1px solid #d81b60;
+    padding: 15px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2 {
+    color: #d81b60;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Footer */
+footer {
+    background-color: #d81b60;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}

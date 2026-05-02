@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio CSS</title>
+
+    <style>
+        /*ERROR 1: Selector incorrecto*/
+        #titulo { 
+            /*Se le agrego #, que indica un ID, ya que el h1 tiene un id*/
+            color: red;
+        }
+
+        /*ERROR 2: Clase mal escrita*/
+        .destacado {
+            /*Se le agrego ., que indica una clase, ya que el p tiene una clase*/
+            color: blue;
+        }
+
+        /*ERROR 3: ID mal escrita*/
+        .principal {
+                /*Se le cambio # por ., ya que, solo puede haber un ID, asi que lo declare class*/
+            font-size: 25px;
+        }
+
+        /*ERROR 4: Selector universal mal usado*/
+        *{
+            /*Le agregue el * que es el selector universal.*/
+            background-color: lightgray;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1 id="titulo">Mi página Web</h1>
+    <p class="destacado">Este es un texto importante.</p>
+    <p class="principal">Texto principal de la página.</p>
+</body>
+</html>

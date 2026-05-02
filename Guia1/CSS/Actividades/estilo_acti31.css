@@ -1,0 +1,9 @@
+/*Contenedor */
+.contenedor {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border-left: 5px solid #1a237e;
+}

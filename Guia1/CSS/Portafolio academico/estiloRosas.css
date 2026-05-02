@@ -1,0 +1,43 @@
+/* Encabezado con gradiente */
+header {
+    background: linear-gradient(90deg, #e91e63, #f06292);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Secciones */
+.seccion {
+    background-color: #f8bbd0;
+    border: 1px solid #d81b60;
+    padding: 15px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2 {
+    color: #d81b60;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Footer con gradiente */
+footer {
+    background: linear-gradient(90deg, #d81b60, #f48fb1);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* Efecto hover en footer */
+footer:hover {
+    background: linear-gradient(90deg, #f06292, #ec407a);
+    transition: 0.3s;
+}

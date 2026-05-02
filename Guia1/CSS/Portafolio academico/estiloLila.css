@@ -1,0 +1,93 @@
+/* Encabezado con gradiente violeta */
+header {
+    background: linear-gradient(90deg, #7b1fa2, #9c27b0);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/*Fondo general*/
+body{
+    background-color: #e1bee7;
+}
+
+/* Secciones */
+.seccion {
+    background-color: #dcd4dd;
+    border: 1px solid #9c27b0;
+    padding: 15px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2 {
+    color: #7b1fa2;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+/*Selector de clase*/
+.destacado {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*Listas*/
+ul {
+    
+    margin-top: 10px;
+}
+
+
+/* --- Nuevos Estilos para la Imagen de Perfil --- */
+
+/* Contenedor para alinear imagen y texto */
+.sobre-mi-contenido {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre imagen y texto */
+}
+
+/* Si la pantalla es pequeña, se ponen en columna */
+@media (max-width: 600px) {
+    .sobre-mi-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.perfil-img-container {
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+.perfil-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Asegura que la imagen no se deforme al recortarse */
+    border: 5px solid #ffffff; /* Borde blanco alrededor */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+
+/* Footer con gradiente */
+footer {
+    background: linear-gradient(90deg, #9c27b0, #ce93d8);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* Efecto hover */
+footer:hover {
+    background: linear-gradient(90deg, #ab47bc, #ba68c8);
+    transition: 0.3s;
+}

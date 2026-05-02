@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad de Aprendizaje - Selectores</title>
+    <style>
+        /* 1. Selector Universal: Afecta a todos los elementos del documento */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 2. Selector de Etiqueta: Define el estilo general del cuerpo */
+        body {
+            background-color: blanchedalmond;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px;
+        }
+
+        /* 3. Selectores de Clase: Ofrecen un mayor nivel de control y personalización */
+        
+        /* Clase para el Título */
+        .titulo-destacado {
+            color: #1a237e; /* Azul oscuro */
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Clase para el Párrafo */
+        .texto-informativo {
+            color: #455a64; /* Gris azulado */
+            line-height: 1.6;
+            text-align: justify;
+            background-color: white;
+            padding: 20px;
+            border-left: 5px solid #1a237e;
+            border-radius: 4px;
+        }
+
+        /* Clase para el Botón */
+        .boton-accion {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px;
+            background-color: palevioletred;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Aplicación de las 3 clases definidas -->
+    <h1 class="titulo-destacado">Aprendiendo Selectores CSS</h1>
+
+    <p class="texto-informativo">
+        Según la guía de estudio, el selector de clase permite aplicar estilos a uno o varios 
+        elementos que comparten una misma clase, facilitando la reutilización y el diseño 
+        de componentes específicos como tarjetas o botones.
+    </p>
+
+    <a href="#" class="boton-accion">¡Logro Completado!</a>
+
+</body>
+</html>

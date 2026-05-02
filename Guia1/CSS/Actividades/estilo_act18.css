@@ -1,0 +1,24 @@
+/*Contenedor */
+.contenedor {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: darkkhaki;
+    border-radius: 10px;
+}
+
+/*destacado*/
+.destacado{
+    background-color: bisque;
+    padding: 10px;
+    border-left: 10px solid darkgoldenrod;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    background-color: darkgreen;
+    padding: 20px;
+    color:bisque;
+     border-radius: 10px;
+}

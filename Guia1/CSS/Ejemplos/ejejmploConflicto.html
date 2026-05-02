@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conflictos en CSS </title>
+    <style>
+        /*Regla 1: Selector de etiqueta*/
+        p {
+            color: blue;
+        }
+
+        /*Regla 2: Selector de clase*/
+        .rojo {
+            color: green;
+        }
+
+        /*Regla 3: Selector de ID*/
+        #principal {
+            color: red;
+        }
+
+
+        /*Regla 4: Misma prioridad que la clase (pero está despues)*/
+        .texto {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p id="principal" class="texto">
+        Este texto tiene multiples estilos aplicados.
+    </p>
+
+    /*Mini reto del profesor para los estudiantes*/
+    <p id="principal" class="texto" style="color: orange;">
+        debio de ser el mismo texto, pero no queria borrarlo. Este texto tiene multiples estilos aplicados.
+    </p>
+    
+</body>
+</html>
