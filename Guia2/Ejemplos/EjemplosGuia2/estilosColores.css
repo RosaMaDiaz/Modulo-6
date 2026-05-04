@@ -1,0 +1,53 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+    margin-bottom: 30px;
+}
+
+/* Estilo base para párrafos (simulación ligera de bloques) */
+p {
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*Colores por tipo */
+.nombre {
+    background-color: navy;
+    color: white;
+}
+
+.hexadecimal {
+    background-color: #FF5733;
+    color: white;
+}
+
+.rgb {
+    background-color: rgb(100, 149, 237);
+    color: white;
+}
+
+.rgba {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: black;
+}
+
+.hsl {
+    background-color: hsl(200, 70%, 50%);
+    color: white;
+}
+
+.hsla {
+    background-color: hsla(120, 60%, 70%, 0.5);
+    color: black;
+}
