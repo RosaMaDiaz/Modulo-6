@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad Font Size</title>
+
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 2em;
+                    }
+        p {
+            font-size: 1rem;
+        }
+
+        /*nivel pro*/
+        h3 {
+            font-size: clamp(24px, 5vw, 48px);
+
+        }
+
+        p {
+            font-size: clamp(14px, 2vw, 18px);
+        }
+
+    </style>
+</head>
+
+<body>
+    
+<!--Nivel basico uso de pixeles-->
+<h1 style="font-size: 24px; color: red">Nivel basico uso de pixeles</h1>
+<p style="font-size: 16px;">Texto normal 16px.</p>
+<p style="font-size: 24px;">Texto más grande 24px.</p>
+<p style="font-size: 32px;">Texto destacado 32px.</p>
+
+
+<!--Nivel intermedio uso em y %-->
+<div style="font-size: 16px;">
+    <h1 style="font-size: 1.5em; color: red;">Nivel base em y %</h1>
+    <p style="font-size: 1em;">Texto base</p>
+    <p style="font-size: 1.5em;">Texto 50% 1.25em. más grande</p>
+    <p style="font-size: 2em;">Texto doble tamaño  2em.</p>
+</div>
+
+<!--Nivel intermedio -rem-->
+<h2 style="font-size: 1.5rem; color:red">Nivel intermedio -rem</h2>
+<h1>Título Principal</h1>
+<p>Texto normal 1rem.</p>
+
+<!--Nivel Responsive vw-->
+<h2 style="font-size: 1.5rem; color:red">Nivel Responsive vw</h2>
+<h1 style="font-size: 5vw;">Título adaptable 5vw</h1>
+<p style="font-size: 2vw;">Texto que cambia con la pantalla 2vw.</p>    
+
+<!--Nivel PRO-->
+<h2 style="font-size: 24px; color:red">Nivel PRO</h2>
+<h3>Título Adaptable con limites</h3>
+<p>Texto responsivo controlado</p>
+
+
+</body>
+</html>
