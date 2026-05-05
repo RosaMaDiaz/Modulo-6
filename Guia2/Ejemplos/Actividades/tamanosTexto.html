@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamaños de Texto</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        .px {
+            font-size: 20px;
+        }
+
+        .em {
+            font-size: 1.5em;
+        }
+
+        .vw {
+            font-size: 3vw;
+        }
+
+        .pro { /*Reto adicional nivel pro*/
+            font-size: clamp(16px, 4vw, 32px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Compracion de tamaños de textos</h1>
+    <p class="px">Texto con tamaño en píxeles (px)</p>
+    <p class="em">Texto con tamaño en em</p>
+    <p class="rem">Texto con tamaño en rem</p>
+    <p class="vw">Texto con tamaño en viewport width (vw)</p>
+    
+    <!--Reto adicional nivel pro-->
+    <p class="pro">Texto con tamaño usando clamp()</p>
+
+
+</body>
+</html>
