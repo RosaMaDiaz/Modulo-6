@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo background-color</title>
+    <style>
+        .caja {
+            background-color: #f2a900;
+            padding: 20px;
+            color: white;
+            width: 300px;
+        }
+
+        .contenedor {
+            background: #3498db url("fondo.png") no-repeat center;
+            color: white;
+            padding: 30px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caja">
+        Este es un ejemplo usando la propiedad background-color.
+    </div>
+    <br>
+
+    <div class="contenedor">
+        Ejemplo del uso de la propiedad en CSS.
+    </div>
+    <br>
+
+     <div style="background: linear-gradient(to right, blue,lightblue);
+        padding: 30px;
+        color: white;">
+        Fondo con degradao
+    </div>
+    <br>
+
+    <!--Ejemplo pagina 27-->
+    <p style="background-color: lightblue;">
+        Este párrafo tiene un fondo azul claro
+    </p>
+    
+    <!--Probando color hexadecimal-->
+    <p style="background-color: #FF5733;">
+        Este párrafo tiene un fondo de color naranja
+    </p>
+
+    <!--Probando color RGB-->
+    <p style="background-color: rgb(100,149,237);">
+        Este párrafo tiene un fondo de color azul con rgb
+    </p>
+
+    <!--Probando color HSL-->
+    <p style="background-color: hsl(200,70%,50%);">
+        Este párrafo tiene un fondo de color azul con hsl
+    </p>
+    
+</body>
+</html>

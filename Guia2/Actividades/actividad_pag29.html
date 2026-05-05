@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Diseñando secciones con fondos</title>
+    <style>
+        .fondo {
+            background-color: aquamarine;
+            padding: 20px;
+            color: black;
+            width: 500px;
+            font-size: 18px;
+            text-align: right;
+        }
+
+        .degradado {
+            background: linear-gradient(to right, aqua, orange);
+            padding: 20px;
+            color: black;
+            width: 500px;
+            font-size: 18px;
+            text-align: center;
+
+        }
+
+        .fondoColor {
+            background: rgb(3, 88, 60) url("fondo.png") no-repeat center;
+            padding: 20px;
+            color: wheat;
+            width: 500px;
+            font-size: 18px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!--Background-color-->
+    <div class="fondo">
+        <strong> La propiedad background-color</strong>permite establecer el color de fondo de un elemento HTML.
+        Puede definirse utilizando diferentes formatos de color, como nombres predefinidos,
+        códigos hexadecimales, valores RGB o RGBA. Su uso es fundamental para resaltar
+        secciones, mejorar la legibilidad y definir la identidad visual de un sitio web.
+    </div>
+    <br>
+
+    <!--Degradado-->
+    <div class="degradado">
+            <strong> Los degradados </strong> permiten crear transiciones suaves entre dos o más colores sin necesidad
+            de utilizar imágenes. En esta unidad se introduce el concepto de degradado, enfocándose
+            principalmente en los degradados lineales mediante la función linear-gradient(), los cuales
+            se utilizan como valor de fondo para dar un aspecto más moderno y dinámico a los diseños
+            web.
+    </div>
+    <br>
+
+      <!--Background-->
+    <div class="fondoColor">
+            <strong> La propiedad background</strong> es una forma abreviada que permite definir varias propiedades
+            de fondo en una sola línea de código. Facilita la escritura del CSS y mejora la organización
+            del código, permitiendo combinar color de fondo, imagen y otros valores relacionados en
+            una única declaración.
+    </div>
+    <br>
+    
+</body>
+</html>
