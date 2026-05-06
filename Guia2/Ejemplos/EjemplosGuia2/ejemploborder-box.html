@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .caja1 {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid blue;
+            background-color: lightblue;
+        }
+
+        .caja2 {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid red;
+            background-color: lightcoral;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caja1">
+        content-box (más grande lo esperado)
+
+    </div>
+
+    <div class="caja2">
+        border-box (tamaño controlado)
+    </div>
+
+    
+</body>
+</html>
