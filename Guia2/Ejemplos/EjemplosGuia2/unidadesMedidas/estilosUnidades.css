@@ -1,0 +1,49 @@
+/*Estilos generales*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Título*/
+h1 {
+    font-size: 2 rem;/*Tamaño relativo al root*/
+    margin-bottom: 30px;
+    color: darkblue;
+}
+
+/*Estilo base todas las cajas*/
+.caja {
+    border: 3px solid #444;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #e0e0e0;
+    text-align: justify;
+
+}
+
+/*Caja 1: px y em*/
+.caja1 {
+    width: 300px; /*Ancho absoluto*/
+    height: 150px; /*Alto Absoluto*/
+    font-size: 1.2em; /*relativo al texto del padre*/
+    background-color: #cce5ff;
+}
+
+/*Caja 2: % y rem, vh*/
+.caja2 {
+    width: 70%; /*Ancho relativo al contenedor*/
+    height: 25vh; /*Alto relativa a la ventana*/
+    font-size: 1.5rem; /*relativo al tamaño de la raiz*/
+    background-color: #d4edda;
+}
+
+/*Caja 3: vw y vmin*/
+.caja3 {
+    width: 50vw; /*Ancho relativo a la ventana*/
+    height: 20vmin; /*Alto relativo al menor valor entre ancho/alto de la ventana*/
+    font-size: 3vmin; /*tamaño de fuente relativo*/
+    background-color: #fff3cd;
+}
