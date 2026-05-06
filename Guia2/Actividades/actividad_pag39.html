@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construyendo una caja perfecta</title>
+    <style>
+
+        body {
+            background-color: rgb(213, 190, 235);
+            text-align: center;
+        }
+
+        h3 {
+            color:blueviolet;
+            text-transform: uppercase;
+        }
+
+        .caja {
+            width: 500px;
+            margin: 15px auto;
+            padding: 20px;
+            
+            
+        }
+
+        .caja1 {
+           
+            border: 5px double blue;
+            background-color: rgb(189, 216, 224);
+        }
+
+        .caja2 {
+           
+            border: 5px dotted red;
+            background-color: rgb(228, 183, 183);
+            box-sizing: border-box;
+        }
+
+        .caja3 {
+           
+            border: 5px solid green;
+            background-color: greenyellow;
+            box-sizing: border-box;
+            padding: 15px;
+            margin: 20px;
+            width: 200px;
+            height: 100px;
+        }
+
+        .caja4 {
+           
+            border: 5px solid rgb(13, 9, 26);
+            background-color: rgb(63, 24, 233);
+            box-sizing: border-box;
+            color:antiquewhite;
+            padding: 15px;
+            margin: 20px;
+            width: 200px;
+            height: 100px;
+        }
+        .caja3, .caja4 {
+          display: inline-block; /* hace que se ubiquen lado a lado */
+            /*vertical-align: top;   opcional, para alinearlas arriba */
+}
+
+    </style>
+</head>
+<body>
+    <h3>content-box (más grande lo esperado)</h3>
+    <div class="caja caja1">
+        La propiedad box-sizing permite controlar la forma en que se calculan las dimensiones de
+        un elemento en CSS. Es decir, define si el ancho (width) y el alto (height) incluyen o no el
+        padding y el border.
+
+    </div>
+
+    <h3>border-box (tamaño controlado)</h3>
+    <div class="caja caja2">
+        Esta propiedad es fundamental para evitar problemas de diseño, ya que facilita el control
+        del tamaño real de los elementos dentro de una página web
+    </div>
+
+        <h3>Cajas más pequeña</h3>
+        <div class="caja3">
+        Esta caja sera mas pequeña que las demas.
+    </div>
+
+    
+    <div class="caja4">
+        Esta 2da. caja sera mas pequeña que las demas.
+    </div>
+    
+</body>
+</html>
