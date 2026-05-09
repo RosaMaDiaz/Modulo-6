@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #236016;
+}
+
+/*GRID PRINCIPAL*/
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "menu menu"
+        "contenido sidebar"
+        "publicaciones sidebar"
+        "videos sidebar"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+/*SECCIONES*/
+.header {
+    grid-area: header;
+    background: #4DD02F;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    /* Nuevas propiedades para alinear */
+    display: flex;             /* Activa el modo Flexbox */
+    align-items: center;       /* Centra verticalmente la imagen y el texto */
+    justify-content: center;    /* Centra el conjunto en el medio del header */
+    gap: 20px;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background: #3faa27;
+    padding: 10 px;
+     border-radius: 8px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.contenido {
+    grid-area: contenido;
+    background: #8de17a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.publicaciones {
+    grid-area: publicaciones;
+    background: #8de17a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.videos {
+    grid-area: videos;
+    background: #8de17a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #4be25a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.footer {
+    grid-area: footer;
+    background: #153a0d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+   border-radius: 8px 
+}
+
+/*Versión Responsive*/
+@media (max-width: 768px){
+    .contenedor {
+        grid-template-areas: 
+            "header"
+            "menu"
+            "contenido"
+            "publicaciones"
+            "videos"
+            "sidebar"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}
+
