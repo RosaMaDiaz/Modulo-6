@@ -1,0 +1,44 @@
+body {
+    background-color: beige;
+    font-family:'Courier New', Courier, monospace;
+    margin: 5px;
+    text-align: center;
+}
+
+header {
+    background-color: #078b9c;
+    color:beige;
+    padding: 20px;
+    text-align: center;
+}
+
+.columna {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-size: 16px;
+     padding: 10px;
+     text-align: left;
+}
+
+.columna img {
+    display: block;
+    margin: 10px auto;
+    /* En lugar de max-width, usamos width para obligarlas a crecer */
+    width: 100%; 
+    /* Altura fija opcional para que todas midan lo mismo de alto */
+    height: 250px; 
+    /* Esto evita que la imagen se estire feo (la recorta para que encaje) */
+    object-fit: cover; 
+}
+
+
+
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #055070;
+    color: beige;
+}
