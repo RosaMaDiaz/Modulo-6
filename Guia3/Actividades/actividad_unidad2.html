@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Unidad 2 Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background: #f4f6f9;
+            
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: rgb(5, 49, 5);
+        }
+
+        .contenedor-flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .caja {
+            background-color: #50911e;
+            color: white;
+            padding: 50px;
+            border-radius: 8px;
+            transition: 0.3s;
+            height: 200px;
+                      
+        }
+
+        .caja:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Actividad Unidad 2 de Flexbox</h1>
+    <div class="contenedor-flex">
+        <div class="caja">
+            <h2>Aplicación en el desarrollo web</h2>
+            <h3>Flexbox se utiliza para:</h3>
+            <ul>
+                <li>Menús de navegación</li>
+                <li>Formularios</li>
+                <li>Tarjetas de contenido</li>
+                <li>Distribución general de elemento</li>
+            </ul>
+        </div>
+
+        <div class="caja">
+            <h2>Aplicación en el desarrollo web</h2>
+            <h3>Flexbox permite crear:</h3>
+            <ul>
+                <li>Menús horizontales</li>
+                <li>Distribuciones flexibles</li>
+                <li>Interfaces adaptables</li>
+            </ul>
+        </div>
+
+        <div class="caja">
+            <h2>Buenas Prácticas generales</h2>
+            <ul>
+                <li>Usar Flexbox para distribuciones simples</li>
+                <li>Mantener consistencia en alineación</li>
+                <li>No sobrecargar el contenedor</li>
+            </ul>
+            
+        </div>
+        
+    </div>
+
+    <footer>
+        <hr>
+        &copy; 2026. Realizado por Rosa Diaz.
+    </footer>
+    
+</body>
+</html>
