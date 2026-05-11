@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad usando Grid</title>
+    <style>
+        body {
+            background-color: coral;
+        }
+        .contenedor { 
+            display: grid; 
+            Grid-template-columns: 1fr 1fr 1fr;
+            gap:10px;
+        }
+
+         .contenedor2 { 
+            display: grid; 
+            /*de la 2da. actividad de la pagina 26*/
+            Grid-template-columns: 1fr 1fr;
+                gap:10px;
+        }
+
+        .contenedor3 { 
+            display: grid; 
+            /*de la 2da. actividad de la pagina 26*/
+            Grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap:10px;
+        }
+
+        .contenedor4 { 
+            display: grid; 
+            /*de la 3ra. actividad de la pagina 27*/
+            Grid-template-rows: 100px 200px 50px 50px;
+                gap:10px;
+        }
+
+           .contenedor5 { 
+            display: grid; 
+            Grid-template-columns: 1fr 1fr 1fr;
+            gap:10px;
+        }
+
+        .item {
+            background:  lightblue;    
+            padding:  20px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Usando solo display:grid</h2>
+    <div class="contenedor">
+                <p>Usando el grid. -primer ejemplo</p>
+        
+    </div>
+
+    <h2>Usando  Grid-template-columns: 1fr 1fr con el diplay grid</h2>
+    <div class="contenedor2">
+        <p>Usando el grid. -segundo  ejemplo</p>
+        <p>Usando el grid. -segundo ejemplo</p>
+    </div>
+
+     <h2>Usando  Grid-template-columns: 1fr 1fr 1fr 1fr con 4 columnas</h2>
+    <div class="contenedor3">
+        <p>A</p>
+        <p>B</p>
+        <p>C</p>
+        <p>D</p>
+    </div>
+
+    <h2>Usando  Grid-template-rows: 100px 200px con filas de diferentes tamaño</h2>
+    <div class="contenedor4">
+        <p>f1</p>
+        <p>f2</p>
+        <p>f3</p>
+        <p>f4</div>
+    </div>
+
+    <h2>Usando color y padding </h2>
+    <div class="contenedor5">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+    </div>
+
+    
+</body>
+</html>
