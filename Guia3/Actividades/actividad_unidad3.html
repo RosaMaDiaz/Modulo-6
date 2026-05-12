@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Unidad 3</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: #2c3e50;
+            margin: 20px;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: #ecf0f1;
+        }
+
+        .contenedor {
+           display: grid; 
+           grid-template-columns: repeat(3, 1fr);
+           gap: 15px;
+           margin: auto;
+        }
+
+        .item {
+            background: white;
+            padding: 30px;
+            text-align: justify;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+            background: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Actividad de Grid Moderno</h1>
+    <div class="contenedor">
+		<div class="item">
+            <strong>CSS Grid Layout</strong> es un sistema de diseño bidimensional en CSS que permite estructurar páginas web en filas y columnas simultáneamente. Se activa aplicando display: grid a un contenedor, lo que facilita crear diseños complejos, ordenados y responsivos sin depender de tablas o múltiples divs flotantes, siendo ideal para layouts completos.
+        </div>
+		<div class="item">
+            <h3>Conceptos Clave y Propiedades</h3>
+            <ul>
+                <li><strong>Grid Container (Padre):</strong> Elemento con display: grid o display: inline-grid.</li>
+                <li><strong>Grid Items (Hijos):</strong> Elementos directos dentro del contenedor que se posicionan automáticamente en la cuadrícula.</li>
+                <li><strong>Estructura:</strong> Se define con grid-template-columns (columnas) y grid-template-rows (filas).</li>
+                <li><strong>Unidad fr (Fracción):</strong> Representa una fracción del espacio disponible, útil para diseños flexibles.</li>
+                <li><strong>Gap:</strong> La propiedad gap (o grid-gap) establece el espacio entre filas y columnas.</li>
+            </ul>
+        </div>
+		<div class="item">
+            <p>
+            <strong>Ejemplo de CSS:</strong><br>
+            .contenedor { <br>
+                display: grid;<br>
+                grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas iguales */<br>
+                grid-template-rows: auto;<br>
+                gap: 20px; /* Espacio entre celdas */<br>
+            }</p>
+        </div>
+        <div class="item">
+           <h3>Aplicación en el desarrollo web</h3>
+           <p> CSS Grid permite crear:</p>
+            <ul>
+                <li>Diseños de páginas completas</li>
+                <li>Galerías de imágenes</li>
+                <li>Paneles estructurados</li>
+                <li>Interfaces modernas</li>
+            </ul>
+        </div>
+
+        <div class="item">
+           <h3>Buenas prácticas generales</h3>
+            <ul>
+                <li>Usar repeat() para simplificar código</li>
+                <li>Definir tamaños de columnas y filas con unidades fraccionarias</li>
+                <li>Utilizar gap para crear espacio entre elementos</li>
+                <li>Planificar el diseño antes de implementarlo</li>
+            </ul>
+        </div>
+
+         <div class="item">
+           <h3>¿Qué integra este ejemplo?</h3>
+            <ul>
+                <li>display: grid → activa el layout</li>
+                <li>grid-template-columns → estructura en 2 columnas</li>
+                <li>repeat() → simplifica el código</li>
+                <li>gap → separación uniforme</li>
+                <li>box-shadow → profundidad visual</li>
+                <li>border-radius → diseño moderno</li>
+            </ul>
+        </div>
+     
+    </div>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; color: #ecf0f1; margin-top: 20px;">
+            © 2026 Actividad Unidad 3 - CSS Grid Layout. <br> 
+            Realizado por: Rosa Díaz.   
+        </p>
+    </footer>
+</body>
+</html>
