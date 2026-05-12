@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad pagina 40</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: #f87c63;
+            margin: 20px;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .contenedor {
+           display: flex; 
+           flex-direction: row;
+           gap: 20px;
+           padding: 20px;
+        }
+
+        .item {
+            flex: 1;
+            background: #f5b027;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 20px;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hace el cambio suave */
+            padding: 20px;
+        }
+
+        .item:hover {
+            transform: translateY(-5px); /* Eleva la tarjeta ligeramente */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Oscurece la sombra */
+            background: rgb(253, 253, 10);
+            color: rgb(243, 21, 195);
+        }
+
+        @media(max-width: 768px){
+            body {
+                background-color: lightgreen;
+            }
+
+            .contenedor {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Adaptación de columnas</h1>
+    <div class="contenedor">
+		<div class="item">
+        <p>
+            La adaptación de columnas es una de las técnicas más importantes dentro del diseño
+            responsive, ya que permite que el contenido de una página web se reorganice de manera
+            eficiente según el tamaño de la pantalla del dispositivo. Su objetivo principal es mantener
+            la legibilidad, la armonía visual y la facilidad de navegación, sin importar si el usuario
+            está en un teléfono móvil, una tableta o una computadora.
+        </p>
+        </div>
+		<div class="item">
+            <p>
+                En un diseño tradicional de escritorio, es común ver varias columnas de contenido en
+                paralelo (por ejemplo, dos, tres o más columnas). Sin embargo, en pantallas pequeñas esto
+                puede generar problemas de visualización, ya que el espacio es limitado. Por eso, en el
+                diseño responsive, esas columnas se reorganizan automáticamente
+            </p>
+        </div>
+		<div class="item">
+            <p>
+                En resumen, la adaptación de columnas permite que un diseño web pase de estructuras
+                complejas en pantallas grandes a estructuras simples y verticales en pantallas
+                pequeñas, garantizando una experiencia de usuario clara, cómoda y eficiente en cualquier
+                dispositivo.
+            </p>
+        </div>
+           
+    </div>
+</body>
+</html>
