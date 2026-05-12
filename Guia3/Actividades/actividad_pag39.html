@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad página 39</title>
+
+    <style>
+
+    /* Escritorio / Pantallas grandes*/
+    .tarjeta {
+        background-color: #f0f0f0;
+        padding: 40px;
+        text-align: center;
+        border: 2px solid #333;
+    }
+
+    /*Para Tablets (Máximo 1024px) */
+    @media (max-width: 1024px) {
+        .tarjeta {
+            background-color: #ffeaa7; /* Cambia a amarillo suave */
+            padding: 30px;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+/* Para Móviles (Máximo 480px) */
+@media (max-width: 480px) {
+  .tarjeta {
+    background-color: #ff7675; /* Cambia a rojo suave */
+    padding: 15px;
+  }
+  p {
+    font-size: 0.9rem; /* Texto más pequeño para pantallas pequeñas */
+  }
+}
+</style>
+
+</head>
+<body>
+    <div class="tarjeta">
+  <h2>Hola, soy Rosa Diaz</h2>
+  <p>Mi diseño cambia según el tamaño de la pantalla.</p>
+</div>
+
+</body>
+</html>
