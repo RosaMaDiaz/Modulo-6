@@ -2,17 +2,18 @@
 .contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
 }
 
 /*Cajas internas*/
 .item {
+   
     background: lightblue;
     padding: 30px;
     text-align: center;
     border-radius: 8px;
     font-size: 20px;
-    }
-
+    margin: 20px; 
     
+}
