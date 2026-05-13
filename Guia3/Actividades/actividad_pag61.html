@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia y Evolución del Internet</title>
+    <style>
+        /* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.main-header {
+    background: #1a73e8;
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.main-nav {
+    background: #333;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+.main-nav a {
+    display: block;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    background: #555;
+}
+
+
+.container {
+    display: flex; 
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.content {
+    flex: 3; 
+}
+
+.sidebar {
+    flex: 1; 
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* 5. Footer */
+.main-footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <!-- 1. Encabezado (Header) -->
+    <header class="main-header">
+        <img src="https://hotmart.s3.amazonaws.com/product_pictures/786821ed-fe22-42ea-9e80-9bdbb6f9d9d6/transformaciondigital.jpg" width= 200 alt="log">
+        <div class="logo">MundoDigital</div>
+        
+    </header>
+
+    <!-- 2. Navegación (Nav) -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="https://www.cloudflare.com/es-es/learning/network-layer/internet-protocol/">Protocolos</a></li>
+            <li><a href="https://www.fortinet.com/lat/resources/cyberglossary/internet-security">Seguridad</a></li>
+            <li><a href="https://www.internetsociety.org/es/issues/categorias-pasadas/futuro-de-internet/">Futuro</a></li>
+        </ul>
+    </nav>
+
+    <div id="Inicio" class="container">
+        <!-- 3. Contenido principal (Main) -->
+        <main class="content">
+            <article>
+                <h1>¿Qué es el Internet?</h1>
+                <p>
+                    Ees una red global descentralizada de computadoras interconectadas que utilizan la familia de protocolos TCP/IP, permitiendo el 
+                    intercambio de información y acceso a servicios a nivel mundial. Funciona como una "red de redes" que conecta dispositivos físicos 
+                    desde servidores hasta teléfonos— mediante fibra óptica, cables de cobre y conexiones inalámbricas, transmitiendo datos binarios.
+                </p>
+                <img src="https://thumbs.dreamstime.com/b/conexi%C3%B3n-global-imagen-cautivadora-que-representa-un-mapa-mundial-con-l%C3%ADneas-interconectadas-del-mundo-irradian-desde-varios-329847368.jpg" alt="Mapa de conexiones globales">
+                <p>
+                    Actualmente, internet conecta una vasta gama de dispositivos, incluidos electrodomésticos, automóviles y sistemas de iluminación, 
+                    además de computadoras y teléfonos, formando parte del ciberespacio cotidiano.
+                </p>
+            </article>
+        </main>
+
+        <!-- 4. Barra lateral (Aside) -->
+        <aside class="sidebar">
+            <h3>Recursos Rápidos</h3>
+            <ul>
+                <li><a href="https://www.fortinet.com/lat/resources/cyberglossary/what-is-5g">¿Qué es el 5G?</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Historia_de_la_World_Wide_Web">Historia de la WWW</a></li>
+                <li><a href="https://www.incibe.es/ciudadania/blog/conceptos-basicos-de-ciberseguridad-que-debes-conocer">Ciberseguridad básica</a></li>
+            </ul>
+           
+        </aside>
+    </div>
+
+    <!-- 5. Pie de página (Footer) -->
+    <footer class="main-footer">
+        <div class="footer-info">
+            <p>&copy; 2026 MundoDigital - Rosa Díaz</p>
+            <div class="socials">
+                <a href="#">YouTube</a> | <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
