@@ -1,0 +1,14 @@
+.display-mini {
+display: inherit
+!important;
+}
+h1, h2 {
+font-size: 1.25em;
+}
+body {
+font-family: "Lucida Sans",sans-serif;
+font-size: 1.1em;
+}
+select.display-mini {
+font-size: 1.25em;
+}

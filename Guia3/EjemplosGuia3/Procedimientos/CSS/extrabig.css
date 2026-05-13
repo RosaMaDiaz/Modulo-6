@@ -1,0 +1,48 @@
+.display-extrabig {
+display: inherit
+!important;
+}
+header, footer, #wrapper {
+clear: both;
+margin-left: auto;
+margin-right: auto;
+max-width: 1800px;
+width: 90%;
+}
+header h1 {
+font-size: 2.2em;
+text-align: center;
+}
+header h2 {
+font-size: 1.6em;
+text-align: center;
+}
+p.display-extrabig {
+font-size: 0.9em;
+text-align: justify;
+}
+.menu ul li {
+display:block;
+padding: 6px 10px;
+}
+#main-nav {
+float: left;
+max-width: 240px;
+padding-left: 10px;
+width: 19%;
+}
+#main-section {
+float: left;
+max-width: 1280px;
+padding: 2px 8px;
+width: 64%;
+}
+aside.display-extrabig {
+float: right;
+max-width: 280px;
+width: 14%;
+}
+#menusec li {
+display: block;
+padding: 6px 2px;
+}

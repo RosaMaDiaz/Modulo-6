@@ -1,0 +1,20 @@
+.display-extrabig {
+display: none;
+}
+.display-big {
+display: none;
+}
+.display-medium {
+display: none;
+}
+.display-mini {
+display: none;
+}
+aside ul,
+nav ul {
+list-style: none;
+padding-left: 10px;
+}
+.menu {
+padding-left: 0;
+}

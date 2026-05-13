@@ -1,0 +1,37 @@
+.display-big {
+display: inherit
+!important;
+}
+header, footer, #wrapper {
+clear: both;
+margin-left: auto;
+margin-right: auto;
+max-width: 1020px;
+width: 86%;
+}
+h1, h2 {
+text-align: center;
+font-size: 1.4em;}
+p.display-big {
+font-size: 0.9em;
+text-align: justify;
+}
+.menu ul li {
+display:block;
+padding: 4px 8px;
+}
+#main-nav {
+float: left;
+max-width: 280px;
+padding-left: 10px;
+width: 18%;
+}
+#main-section {
+margin-left: 20%;
+max-width: 1024px;
+padding: 16px 20px;
+width: 76%;
+}
+aside.display-big {
+width: 100%;
+}
