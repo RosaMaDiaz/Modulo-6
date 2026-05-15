@@ -1,0 +1,262 @@
+/* Configuración General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comfortaa', cursive; 
+    background-color: #fce4ec; 
+    color: #4a148c; 
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Contenedor para ponerlas una al lado de la otra */
+.contenedor-mv {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* Estilo Base para ambas tarjetas */
+.tarjeta-mision, .tarjeta-vision {
+    flex: 1;
+    padding: 40px;
+    border-radius: 30px; /* Bordes muy redondeados como la imagen */
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Tarjeta de Misión (Rosa claro con borde rosa) */
+.tarjeta-mision {
+    background-color: #fdf2f7;
+    border-left: 15px solid #ff4d94; /* La línea gruesa rosa de la izquierda */
+    color: #6b2d5c;
+}
+
+.tarjeta-mision h3 {
+    color: #6b2d5c;
+    margin-bottom: 15px;
+}
+
+/* Tarjeta de Visión (Morada con texto blanco) */
+.tarjeta-vision {
+    background-color: #6b2d5c; /* El morado oscuro de la diapositiva */
+    color: #ffffff;
+}
+
+.tarjeta-vision h3 {
+    color: #ff4d94; /* Título en rosa para que resalte */
+    margin-bottom: 15px;
+}
+
+
+/* Contenedor de las 3 tarjetas */
+.contenedor-valores {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 0;
+    flex-wrap: wrap; 
+}
+
+/* Tarjeta individual de Valor */
+.tarjeta-valor {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    background-color: #fdf2f7;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 25px; 
+    border-bottom: 8px solid #ff4d94; 
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.05); 
+    transition: 0.3s;
+}
+
+/* Estilo de los iconos */
+.tarjeta-valor .icono {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Títulos de los valores en morado */
+.tarjeta-valor h3 {
+    color: #6b2d5c;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+/* Texto descriptivo en morado claro */
+.tarjeta-valor p {
+    color: #7b4b73;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Efecto al pasar el mouse  */
+.tarjeta-valor:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(255, 77, 148, 0.2);
+}
+
+
+/* Header Estilo Dulce */
+header {
+    grid-area: header;
+    background-color: #6b2d5c;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 4px 4px 15px rgba(107, 45, 92, 0.3);
+}
+
+header .logo {
+    width: 120px;
+    border-radius: 50%; 
+    border: 4px solid #ff4d94;
+    position: absolute;
+    right: 40px;
+}
+
+/* Navegación lateral */
+nav {
+    grid-area: nav;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+    text-decoration: none;
+    background: #f06292; 
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.imgnav {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin-bottom: 15px; 
+}
+
+nav a:hover {
+    background: #6b2d5c;
+    transform: scale(1.05);
+}
+
+/* Contenido Principal */
+main {
+    grid-area: main;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #ff4d94;
+    border-bottom: 3px solid #fce4ec;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+
+.item-dulce {
+    background: #fff0f6;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 0px 25px 0px 25px; 
+    box-shadow: 3px 3px 8px gray, -2px -2px 8px lightsalmon; 
+    text-align: center;
+    font-weight: bold;
+    border-left: 5px solid #ff4d94;
+}
+
+
+/*linea de productos*/
+.galeria-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-producto {
+    background-color: #fdf2f7; 
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 6px solid #6b2d5c; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Para que la imagen no se deforme */
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Pie de página */
+footer {
+    grid-area: footer;
+    background-color: #6b2d5c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "nav" "main" "footer";
+    }
+    header { flex-direction: column; }
+    header .logo { position: static; margin-top: 15px; }
+     .imgnav .imgprod{
+        max-width: 80%;
+        margin-bottom: 15px;
+    }
+     .contenedor-mv {
+        flex-direction: column;
+    }
+}
+
