@@ -55,3 +55,54 @@ footer {
         "footer";
     }
 }
+
+/* ============================= */
+/* CONTENEDOR DE TARJETAS */
+/* ============================= */
+    .tarjetas {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+/* ============================= */
+/* TARJETA BASE */
+/* ============================= */
+    .tarjeta {
+        padding: 20px;
+        background: #ffffff;
+        max-width: 250px;
+        font-family: Arial, sans-serif;
+/* Propiedades visuales base */
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+/* Preparación para efectos futuros */
+        transition: 0.3s;
+}
+/* ============================= */
+
+/* VARIACIONES DE ESTILO */
+/* ============================= */
+/* Estilo básico */
+    .estilo1 {
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+/* Estilo intermedio */
+    .estilo2 {
+        border-radius: 12px;
+        box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+}
+/* Estilo avanzado */
+    .estilo3 {
+        border-radius: 20px;
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+/* ============================= */
+/* ETIQUETA DE DESCRIPCIÓN */
+/* ============================= */
+.label {
+        display: block;
+        margin-top: 10px;
+        font-size: 12px;
+        color: gray;
+}
