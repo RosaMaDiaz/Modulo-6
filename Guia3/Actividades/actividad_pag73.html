@@ -33,27 +33,32 @@
             align-items: center;
             justify-content: center;
             margin: auto; 
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
             font-size: 20px;
             font-weight: bold;
             transition: 0.3s;
+            
         }
 
         .item.a {
             border-radius: 15px;
+            /*aplicando el box-shadow*/
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);  /*Da la sensacion de elevacion*/
         }
 
         .item.b {
             border-radius: 30px;
+             box-shadow: 5px 5px 10px #ccc, -5px -5px 10px white;  /*Sombra de colores neomorfismo*/
         }
 
         .item.c {
-            border-radius: 50%; /* 50% lo hará circular si el cuadro es cuadrado */
+            border-radius: 50%;
+            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3);  /*Sombra interna, efecto hundido*/
         }
 
         .item.d {
-            /* Nota: Quité los paréntesis porque causan error de sintaxis */
+            
             border-radius: 0px 20px 0px 20px; 
+            box-shadow: 2px 2px 5px gray, -2px -2px 5px lightsalmon ;  /*Permite efectos mas complejos, doble sobre con colores*/
         }
 
         .item:hover {
@@ -68,10 +73,10 @@
 <body>
     <h1>Uso del border-radius</h1>
     <div class="contenedor">
-		<div class="item item a">A</div>
-		<div class="item item b">B</div>
-		<div class="item item c">C</div>
-        <div class="item item d">D</div>
+		<div class="item a">A</div>
+		<div class="item b">B</div>
+		<div class="item c">C</div>
+        <div class="item d">D</div>
      
     </div>
 </body>
